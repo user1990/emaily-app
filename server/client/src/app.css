@@ -1,0 +1,37 @@
+body {
+  background-color: #d1eaf3;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #266f6e;
+  padding-bottom: 10px;position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow:hidden;
+}
+
+.footer-copyright {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+nav {
+  background-color: #218e9e;
+}
+
+nav .brand-logo {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn, .btn-large:hover {
+  background-color: #1fad14;
+}
+
+.btn:hover, .btn-large:hover {
+  background-color: #228c1a;
+}

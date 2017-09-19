@@ -5,7 +5,7 @@
 
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "binaryLiterals": true,                    // enable binary literals
       "blockBindings": true,                     // enable let and const (aka block bindings)
@@ -134,7 +134,7 @@
     "no-self-compare": 2,       // disallow comparisons where both sides are exactly the same
     "no-sequences": 2,          // disallow use of the comma operator
     "no-throw-literal": 2,      // restrict what can be thrown as an exception
-    "no-unused-expressions": 2, // disallow usage of expressions in statement position
+    "no-unused-expressions": 0, // disallow usage of expressions in statement position
     "no-useless-call": 2,       // disallow unnecessary .call() and .apply()
     "no-useless-concat": 2,     // disallow unnecessary concatenation of literals or template literals
     "no-void": 2,               // disallow use of the void operator
