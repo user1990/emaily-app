@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Payments from './Payments';
 
 class Header extends Component {
   renderContent() {
@@ -14,11 +15,15 @@ class Header extends Component {
           </a>
         </li>;
       default:
-        return <li>
-          <a href="/api/logout" className="waves-effect waves-light btn">Logout
-            <i className="material-icons right">exit_to_app</i>
-          </a>
-        </li>;
+        return [
+          <li key="1"><Payments /></li>,
+          <li key="3" className="credits">Credits: <span className="new badge" data-badge-caption="">{this.props.auth.credits}</span></li>,
+          <li key="2">
+            <a href="/api/logout" className="waves-effect waves-light btn logout">Logout
+              <i className="material-icons right">exit_to_app</i>
+            </a>
+          </li>
+        ];
     }
   }
 

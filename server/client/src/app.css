@@ -35,3 +35,26 @@ nav .brand-logo {
 .btn:hover, .btn-large:hover {
   background-color: #228c1a;
 }
+
+a.waves-effect.waves-light.btn.logout {
+  background-color: #d84300;
+}
+
+a.waves-effect.waves-light.btn.logout:hover {
+  background-color: #c10b0b;
+}
+
+.credits {
+  margin: 0 10px;
+}
+
+span.badge {
+  margin-top: 20px;
+}
+
+span.badge.new {
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #26a69a;
+  border-radius: 3px;
+}

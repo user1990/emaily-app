@@ -228,7 +228,7 @@
       "never"
     ],                                // require or disallow padding inside computed properties (fixable)
     "consistent-this": [
-      2,
+      0,
       "self",
       "user"  // just for this app
     ],                                // enforces consistent naming when capturing the current execution context
@@ -340,7 +340,7 @@
       "always"
     ],                                // require or disallow a space before blocks (fixable)
     "space-before-function-paren": [
-      2,
+      0,
       "never"
     ],                                // require or disallow a space before function opening parenthesis (fixable)
     "space-before-keywords": 0,       // require a space before certain keywords (fixable)
