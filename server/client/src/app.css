@@ -28,12 +28,12 @@ nav .brand-logo {
   margin-left: 10px;
 }
 
-.btn, .btn-large:hover {
-  background-color: #1fad14;
-}
-
-.btn:hover, .btn-large:hover {
-  background-color: #228c1a;
+.btn-login {
+  background-image: url('./google_login.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  right: 0px;
+  height: 47px;
 }
 
 a.waves-effect.waves-light.btn.logout {
@@ -57,4 +57,8 @@ span.badge.new {
   font-size: 1rem;
   background-color: #26a69a;
   border-radius: 3px;
+}
+
+.landing {
+  text-align: center;
 }

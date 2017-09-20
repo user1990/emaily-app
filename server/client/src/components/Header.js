@@ -9,11 +9,8 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return <li>
-          <a href="/auth/google" className="waves-effect waves-light btn">Login
-            <i className="material-icons right">person</i>
-          </a>
-        </li>;
+        // eslint-disable-next-line
+        return <li><a href="/auth/google" className="waves-effect waves-light btn-login"></a></li>;
       default:
         return [
           <li key="1"><Payments /></li>,
