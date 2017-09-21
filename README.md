@@ -9,6 +9,11 @@ More detailed info/diagrams about Project can be found in diagrams folder.
 - Google OAuth authentication.
 - Payment system with Stripe API.
 - Redux Form
-- Email Provider
+- SendGrid API Email Provider
 - Passport for authentication middleware
-- Deployment on Heroku
+- Prod Deployment on Heroku
+
+### API used
+- Google
+- Stripe
+- Sendgrid

@@ -311,7 +311,7 @@
     "padded-blocks": 0,               // enforce padding within blocks
     "quote-props": 0,                 // require quotes around object literal property names
     "quotes": [
-      2,
+      0,
       "single"
     ],                                // specify whether backticks, double or single quotes should be used (fixable)
     "require-jsdoc": 0,               // Require JSDoc comment
