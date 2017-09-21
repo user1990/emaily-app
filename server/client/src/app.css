@@ -62,3 +62,26 @@ span.badge.new {
 .landing {
   text-align: center;
 }
+
+.fixed-action-btn {
+  right: 65px;
+  margin-bottom: 100px;
+}
+
+form {
+  width: 75%;
+  left: 30px;
+  margin-left: 10%;
+  background-color: #2d3e5a;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.confirmation {
+  text-align: center;
+}
