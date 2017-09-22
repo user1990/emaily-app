@@ -9,7 +9,7 @@ body {
   padding-bottom: 10px;position: absolute;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 65px;
   width: 100%;
   overflow:hidden;
 }
@@ -68,20 +68,27 @@ span.badge.new {
   margin-bottom: 100px;
 }
 
-form {
-  width: 75%;
-  left: 30px;
-  margin-left: 10%;
-  background-color: #2d3e5a;
+.form-border{
+  padding-top: 10px;
+  border: 1px solid #266f6e;
+  background-color: #fff;
 }
 
-@media (max-width: 480px) {
-  form {
-    width: 100%;
-    margin-left: 0;
-  }
+a.red.btn-flat.white-text {
+  margin-bottom: 20px;
 }
 
-.confirmation {
-  text-align: center;
+.review-border {
+  padding-top: 10px;
+  border: 1px solid #266f6e;
+  background-color: #fff;
+}
+
+.yellow.darken-3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button.green.btn-flat.right.white-text {
+  margin-top: 20px;
 }
