@@ -7,8 +7,8 @@ module.exports = app => {
     const charge = await stripe.charges.create({
       amount: 500,
       currency: 'usd',
-      source: req.body.id,
-      description: '$5 for 5 credits'
+      description: '$5 for 5 credits',
+      source: req.body.id
     });
 
     req.user.credits += 5;
