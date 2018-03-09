@@ -1,10 +1,8 @@
 # emaily-app
 
-### A BIG fullstack feedback-collection-web application builded and combined with React, Redux, Express, and MongoDB technologies.
+### A MERN fullstack feedback-collection-web application builded and combined with React, Redux, Express, and MongoDB technologies.
 
 More detailed info/diagrams about Project can be found in diagrams folder.
-
-See aplication demo [here](https://emaily-feed-app.herokuapp.com/).
 
 ### Major Tech Features
 
