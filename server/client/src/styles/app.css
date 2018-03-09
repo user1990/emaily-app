@@ -1,0 +1,94 @@
+body {
+  background-color: #d1eaf3;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #266f6e;
+  padding-bottom: 10px;position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  overflow:hidden;
+}
+
+.footer-copyright {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+nav {
+  background-color: #218e9e;
+}
+
+nav .brand-logo {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-login {
+  background-image: url('/images/google_login.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  right: 10px;
+  height: 47px;
+}
+
+a.waves-effect.waves-light.btn.logout {
+  background-color: #d84300;
+}
+
+a.waves-effect.waves-light.btn.logout:hover {
+  background-color: #c10b0b;
+}
+
+.credits {
+  margin: 0 10px;
+}
+
+span.badge {
+  margin-top: 20px;
+}
+
+span.badge.new {
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #26a69a;
+  border-radius: 3px;
+}
+
+.landing {
+  text-align: center;
+}
+
+.fixed-action-btn {
+  right: 65px;
+  margin-bottom: 100px;
+}
+
+.form-border{
+  padding-top: 10px;
+  border: 1px solid #266f6e;
+  background-color: #fff;
+}
+
+a.red.btn-flat.white-text {
+  margin-bottom: 20px;
+}
+
+.review-border {
+  padding-top: 10px;
+  border: 1px solid #266f6e;
+  background-color: #fff;
+}
+
+.yellow.darken-3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button.green.btn-flat.right.white-text {
+  margin-top: 20px;
+}

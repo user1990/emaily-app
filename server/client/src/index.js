@@ -1,20 +1,37 @@
-import 'materialize-css/dist/css/materialize.min.css';
-import './app.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import reduxThunk from 'redux-thunk';
-import reducers from './reducers';
+import { AppContainer } from 'react-hot-loader';
 
-import App from './components/App';
+import configureStore from './modules/app/configureStore';
+import App from './modules/app/App';
 import registerServiceWorker from './registerServiceWorker';
 
-const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
+require('react-hot-loader/patch');
 
-ReactDOM.render(
-  <Provider store={store}><App /></Provider>,
-  document.getElementById('root')
-);
+const store = configureStore();
+
+function render(App) {
+  ReactDOM.render(
+    <Provider store={store}>
+      <AppContainer>
+        <BrowserRouter>
+          <Route component={App} />
+        </BrowserRouter>
+      </AppContainer>
+    </Provider>,
+    document.getElementById('root')
+  );
+}
+
+render(App);
+
+if (module.hot) {
+  module.hot.accept('./modules/app/App', () => {
+    render(App);
+  });
+}
+
 registerServiceWorker();

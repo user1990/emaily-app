@@ -1,39 +1,40 @@
 {
-  "name": "emaily",
+  "name": "server",
   "version": "1.0.0",
-  "description": "feedback-collection-app",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "engines": {
-    "node": "8.5.0",
-    "npm": "5.3.0"
+    "node": "9.7.1",
+    "npm": "5.7.1"
   },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "webhook": "forever sendgrid_webhook.js"
   },
   "author": "user1990",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^6.1.4",
-    "body-parser": "^1.18.1",
-    "concurrently": "^3.5.0",
-    "cookie-session": "^1.3.1",
-    "express": "^4.15.4",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
     "localtunnel": "^1.8.3",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.11.11",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.9",
+    "morgan": "^1.9.0",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
-    "path-parser": "^2.0.2",
+    "path-parser": "^3.0.1",
     "sendgrid": "^5.2.3",
-    "stripe": "^5.0.0"
+    "stripe": "^5.5.0"
   },
   "devDependencies": {
     "forever": "^0.15.3",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.17.1"
   }
 }
